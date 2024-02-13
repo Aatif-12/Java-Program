@@ -1,9 +1,11 @@
-import java.util.*;
-public class ifelse1 {
+import java.util.Scanner;
+
+public class f {
     public static void main(String[] args) {
 
-        scanner sc = new scanner(system.in);
-        int month=sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        int month = sc.nextInt();
+        sc.close();
         switch (month) {
 
             case 1:
@@ -46,4 +48,5 @@ public class ifelse1 {
             default:
                 System.out.println("Enter Valid Month Number");
         }
-    }}
+    }
+}
