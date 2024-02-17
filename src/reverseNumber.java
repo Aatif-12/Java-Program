@@ -1,23 +1,23 @@
 import java.util.Scanner;
-//public class kirti {
-//    public static void main(String args[]){
-//        Scanner sc = new Scanner(System.in);
-//        int n = sc.nextInt();
+// public class kirti {
+// public static void main(String args[]){
+// Scanner sc = new Scanner(System.in);
+// int n = sc.nextInt();
 //
-//        for(int i = n;i  > 0 ;i--){
-//            System.out.println(i);
-//        }
-//    }
-//}
+// for(int i = n;i > 0 ;i--){
+// System.out.println(i);
+// }
+// }
+// }
 
-public class reverseNumber {
-    public static void main(String args[]) {
-        Scanner sc = new Scanner(System.in);
-        int n = sc.nextInt();
-        sc.close();
+// public class reverseNumber {
+// public static void main(String args[]) {
+// Scanner sc = new Scanner(System.in);
+// int n = sc.nextInt();
+// sc.close();
 
-        for (int i = n; i > 0; i--) {
-            System.out.print(i + " ");
-        }
-    }
-}
+// for (int i = n; i > 0; i--) {
+// System.out.print(i + " ");
+// }
+// }
+// }

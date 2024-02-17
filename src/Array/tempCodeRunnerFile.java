@@ -1,1 +1,0 @@
-System.out.print("Sum of subarray is " + sum);
