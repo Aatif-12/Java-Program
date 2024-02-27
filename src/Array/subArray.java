@@ -30,65 +30,90 @@ package Array;
 
 // public class subArray {
 
-//     public static void maxSubArray(int nums[]) {
-//         int currSum = 0;
-//         int max = Integer.MIN_VALUE;
+// public static void maxSubArray(int nums[]) {
+// int currSum = 0;
+// int max = Integer.MIN_VALUE;
 
-//         for (int i = 0; i < nums.length; i++) {
-//             int start = i;
-//             for (int j = i; j < nums.length; j++) {
-//                 int end = j;
-//                 currSum = 0;
-//                 for (int k = start; k <= end; k++) {
-//                     currSum = currSum + nums[k];
-//                 }
-//                 System.out.println(currSum);
-//                 if (max < currSum) {
-//                     max = currSum;
-//                 }
-//             }
-//             System.out.println();
-//         }
-//         System.out.println("Max sum is " + max);
-//     }
+// for (int i = 0; i < nums.length; i++) {
+// int start = i;
+// for (int j = i; j < nums.length; j++) {
+// int end = j;
+// currSum = 0;
+// for (int k = start; k <= end; k++) {
+// currSum = currSum + nums[k];
+// }
+// System.out.println(currSum);
+// if (max < currSum) {
+// max = currSum;
+// }
+// }
+// System.out.println();
+// }
+// System.out.println("Max sum is " + max);
+// }
 
-//     public static void main(String[] args) {
-//         int nums[] = { 2, 4, -2, 1, 7, -3 };
-//         maxSubArray(nums);
-//     }
+// public static void main(String[] args) {
+// int nums[] = { 2, 4, -2, 1, 7, -3 };
+// maxSubArray(nums);
+// }
 // }
 
 /**
- * subArray
+ * // * subArray complexcity reduce
+ * //
  */
+// public class subArray {
+
+// public static void maxSubArraySum(int numbers[]) {
+// int currSum = 0;
+// int maxSum = Integer.MIN_VALUE;
+// int prefix[] = new int[numbers.length];
+
+// prefix[0] = numbers[0];
+// for (int i = 1; i < prefix.length; i++) {
+// prefix[i] = prefix[i - 1] + numbers[i];
+// }
+
+// for (int i = 0; i < numbers.length; i++) {
+// int start = i;
+// for (int j = 0; j < numbers.length; j++) {
+// int end = j;
+
+// currSum = start == 0 ? prefix[end] : prefix[end] - prefix[start - 1];
+// if (maxSum < currSum) {
+// maxSum = currSum;
+// }
+// }
+// }
+// System.out.println("max Sum = " + maxSum);
+// }
+
+// public static void main(String[] args) {
+// int nums[] = { 1, -2, 6, -1, 3 };
+// maxSubArraySum(nums);
+// }
+// }
+
+/* Using kadanes algorithm for less complexcity for above */
+
 public class subArray {
 
-    public static void maxSubArraySum(int numbers[]) {
-        int currSum = 0;
+    public static void kadanes(int[] nums) {
         int maxSum = Integer.MIN_VALUE;
-        int prefix[] = new int[numbers.length];
+        int currSum = 0;
 
-        prefix[0] = numbers[0];
-        for (int i = 1; i < prefix.length; i++) {
-            prefix[i] = prefix[i - 1] + numbers[i];
-        }
-
-        for (int i = 0; i < numbers.length; i++) {
-            int start = i;
-            for (int j = 0; j < numbers.length; j++) {
-                int end = j;
-
-                currSum = start == 0 ? prefix[end] : prefix[end] - prefix[start - 1];
-                if (maxSum < currSum) {
-                    maxSum = currSum;
-                }
+        for (int i = 0; i < nums.length; i++) {
+            currSum = currSum + nums[i];
+            if (currSum < 0) {
+                currSum = 0;
             }
+            maxSum = Math.max(currSum, maxSum);
         }
-        System.out.println("max Sum = " + maxSum);
+        System.out.println("Our Max Subarray sum is : " + maxSum);
     }
 
     public static void main(String[] args) {
-        int nums[] = { 1, -2, 6, -1, 3 };
-        maxSubArraySum(nums);
+        int nums[] = { -2, -3, 4, -1, -2, 1, 5, -3 };
+        kadanes(nums);
     }
 }
