@@ -28,32 +28,66 @@ package Array;
 // }
 // }
 
+// public class subArray {
+
+//     public static void maxSubArray(int nums[]) {
+//         int currSum = 0;
+//         int max = Integer.MIN_VALUE;
+
+//         for (int i = 0; i < nums.length; i++) {
+//             int start = i;
+//             for (int j = i; j < nums.length; j++) {
+//                 int end = j;
+//                 currSum = 0;
+//                 for (int k = start; k <= end; k++) {
+//                     currSum = currSum + nums[k];
+//                 }
+//                 System.out.println(currSum);
+//                 if (max < currSum) {
+//                     max = currSum;
+//                 }
+//             }
+//             System.out.println();
+//         }
+//         System.out.println("Max sum is " + max);
+//     }
+
+//     public static void main(String[] args) {
+//         int nums[] = { 2, 4, -2, 1, 7, -3 };
+//         maxSubArray(nums);
+//     }
+// }
+
+/**
+ * subArray
+ */
 public class subArray {
 
-    public static void maxSubArray(int nums[]) {
+    public static void maxSubArraySum(int numbers[]) {
         int currSum = 0;
-        int max = Integer.MIN_VALUE;
+        int maxSum = Integer.MIN_VALUE;
+        int prefix[] = new int[numbers.length];
 
-        for (int i = 0; i < nums.length; i++) {
+        prefix[0] = numbers[0];
+        for (int i = 0; i < numbers.length; i++) {
+            prefix[i] = prefix[i - 1] + numbers[i];
+        }
+
+        for (int i = 0; i < numbers.length; i++) {
             int start = i;
-            for (int j = i; j < nums.length; j++) {
+            for (int j = 0; j < numbers.length; j++) {
                 int end = j;
-                currSum = 0;
-                for (int k = start; k <= end; k++) {
-                    currSum = currSum + nums[k];
-                }
-                System.out.println(currSum);
-                if (max < currSum) {
-                    max = currSum;
+
+                currSum = start == 0 ? prefix[end] : prefix[end] - prefix[start - 1];
+                if (maxSum < currSum) {
+                    maxSum = currSum;
                 }
             }
-            System.out.println();
         }
-        System.out.println("Max sum is " + max);
+        System.out.println("max Sum = " + maxSum);
     }
 
     public static void main(String[] args) {
-        int nums[] = { 2, 4, -2, 1, 7, -3 };
-        maxSubArray(nums);
+
     }
 }
