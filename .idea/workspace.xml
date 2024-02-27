@@ -5,26 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1d385e33-f277-4ef5-a340-c742ef0b261f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/nprime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dowhile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/f.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/factorial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/halfpyramid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hollowpattern.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ifelse2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/invertedhalfpyramid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kirti.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/newinvertedhalfpyramid.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/nprime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/prime.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/profit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Array/elementfound.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/Array/elementfound.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/methodoverloading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/methodoverloading.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +33,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "D:/Java Practice"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="dowhile" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="dowhile" />

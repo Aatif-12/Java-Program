@@ -18,7 +18,7 @@ public class methodoverloading {
         int i = 5;
         int j = 7;
         float k = 4;
-        (Sum(5,7,4.2));
+        Sum(5,7,4);
         sc.close();
     }
 }
