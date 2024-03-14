@@ -19,14 +19,14 @@
 //     }
 // }
 
-public class cae1 {
+public class tempCodeRunnerFile {
 
     private String make;
     private String model;
     private int year;
 
     // Constructor
-    public cae1(String make, String model, int year) {
+    public tempCodeRunnerFile(String make, String model, int year) {
         this.make = make;
         this.model = model;
         this.year = year;
@@ -45,7 +45,7 @@ public class cae1 {
     }
 
     public static void main(String[] args) {
-        cae1 mycar = new cae1("BMW", "Camry", 2023);
+        tempCodeRunnerFile mycar = new tempCodeRunnerFile("BMW", "Camry", 2023);
         System.out.println("Make : " + mycar.getMake());
         System.out.println("Model : " + mycar.getModel());
         System.out.println("year : " + mycar.getYear());
