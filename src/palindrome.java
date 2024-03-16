@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class palindrome {
     // 121 output 121 its palindrome
-    // 145 output not palindromme
+    // 145 output not palindrommeeee
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int num = sc.nextInt();
