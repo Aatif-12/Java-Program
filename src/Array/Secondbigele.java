@@ -1,5 +1,6 @@
 package Array;
 
+//Second Biggest Element 
 public class Secondbigele {
     public static void main(String[] args) {
         int arr[] = { 10, 20, 50, 100, 60, 100, 80 };
